@@ -3,7 +3,8 @@ name: CI/CD Pipeline
 on:
   push:
     branches: [ master ]
-
+    
+jobs:
   continuous-deployment:
     runs-on: ubuntu-latest
     #needs: [continuous-integration]

@@ -1,11 +1,11 @@
-name: CI/CD Pipeline
+name: CI Pipeline
 
 on:
   push:
     branches: [ master ]
     
 jobs:
-  deployment:
+  integration:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
     
@@ -39,7 +39,7 @@ jobs:
       - name: Upload docker into ECR
         run: docker push 107164280007.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/omer-test:$GITHUB_SHA
 
-      - name: Update lambda image
+      - name: Update AWS lambda image uri
         run: aws lambda update-function-code --function-name omer-s3-lambda --image-uri 107164280007.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/omer-test:$GITHUB_SHA
         
 #       - name: AWS Lambda Deploy

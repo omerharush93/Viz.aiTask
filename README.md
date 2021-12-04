@@ -6,7 +6,7 @@ GitHub Action CI/CD pipeline triggerd by push to master branch:
 
 The AWS Lambda function triggerd by every S3 upload file action, and email the file's type and S3 URI to specefied mail address using Amazon SES.
 
-<img src="images/diagram.png" width="20%"/><img 
+<img src="images/diagram.png" />
                                                 
 ### Built With
 

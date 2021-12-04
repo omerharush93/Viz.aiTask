@@ -1,12 +1,11 @@
 ### AWS Lambda container deploy CI/CD
 
-A CI/CD pipeline triggerd by any push to master branch, that build and push new AWS lambda docker image to AWS ECR registry, and update AWS lambda image uri./n
+A CI/CD pipeline triggerd by any push to master branch, that build and push new AWS lambda docker image to AWS ECR registry, and update AWS lambda image uri.\
 The AWS Lambda function triggerd by every S3 upload file action, and email the file's type and S3 URI to specefied mail address.
 
 ## Getting Started
 
 ### Installation
-
 
 1. Clone the repo    
    ```sh
@@ -25,6 +24,7 @@ The AWS Lambda function triggerd by every S3 upload file action, and email the f
 docker build -t lambda_test . 
 ```
 
+
 ### Run the AWS Lambda container for local test
 
 Let's start the container to test the lambda locally :
@@ -32,6 +32,7 @@ Let's start the container to test the lambda locally :
 ```
 docker run -d -p 9000:8080 lambda_test:latest
 ```
+
 
 ### Test the Lambda locally
 

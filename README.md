@@ -1,6 +1,6 @@
 ### AWS Lambda container deploy CI/CD
 
-A CI/CD pipeline triggerd by any push to master branch, that build and push new AWS lambda docker image to AWS ECR registry, and update AWS lambda image uri.
+A CI/CD pipeline triggerd by any push to master branch, that build and push new AWS lambda docker image to AWS ECR registry, and update AWS lambda image uri./n
 The AWS Lambda function triggerd by every S3 upload file action, and email the file's type and S3 URI to specefied mail address.
 
 ## Getting Started

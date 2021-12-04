@@ -4,7 +4,7 @@ GitHub Action CI/CD pipeline triggerd by push to master branch:
 - Build and push new Lambda docker image to AWS ECR registry
 - Update AWS Lambda container image uri
 
-The AWS Lambda function triggerd by every S3 upload file action, and email the file's type and S3 URI to specefied mail address.
+The AWS Lambda function triggerd by every S3 upload file action, and email the file's type and S3 URI to specefied mail address using Amazon SES.
 
 ### Built With
 

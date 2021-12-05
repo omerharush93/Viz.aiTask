@@ -17,7 +17,7 @@ def lambda_handler(event, context):
     try:
         response = s3.get_object(Bucket=bucket, Key=key)
         print("CONTENT TYPE: " + response['ContentType'])
-        send_email('omerharush@gmail.com', 'omerharush@gmail.com', 'eu-west-1', response['ContentType'], uri)
+        send_email('arthur@viz.ai', 'arthur@viz.ai', 'eu-west-1', response['ContentType'], uri)
         return {
             'StatusCode': 200,
             'Message': 'SUCCESS'
